@@ -6,7 +6,7 @@
   <link href="forestxx.github.io/atom.xml" rel="self"/>
   
   <link href="forestxx.github.io/"/>
-  <updated>2020-08-30T04:26:35.386Z</updated>
+  <updated>2020-09-08T02:25:57.552Z</updated>
   <id>forestxx.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>离散数学的学习1</title>
+    <link href="forestxx.github.io/2020/09/08/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%AD%A6%E4%B9%A01/"/>
+    <id>forestxx.github.io/2020/09/08/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%AD%A6%E4%B9%A01/</id>
+    <published>2020-09-08T02:05:45.000Z</published>
+    <updated>2020-09-08T02:25:57.552Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="离散数学"><a href="#离散数学" class="headerlink" title="离散数学"></a>离散数学</h1><h2 id="集合的定义"><a href="#集合的定义" class="headerlink" title="集合的定义"></a>集合的定义</h2><p> <strong>集合</strong> 是由指定范围内的满足给定条件定所有对象聚集在一起构成，每一个对象称伟这个集合的 <strong>元素</strong></p><p>集合符号的表示<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/07/bwvhn3roGVA4lsm.png" alt="集合"></p><p>属于关系<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/07/TkeAI1GEafsgn4Z.png" alt="1"></p><p> 枚举法<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/08/kWmJ8VqFwjLdBzK.png" alt="2"></p><p> 叙述法<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/08/7IBc8SnLHYOrhqA.png" alt="3"></p><p> 基数<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/08/Kt6NARpSaOGCoMZ.png" alt="4"></p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="离散数学" scheme="forestxx.github.io/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="离散数学" scheme="forestxx.github.io/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="数据结构" scheme="forestxx.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>博客网站的快速搭建</title>
     <link href="forestxx.github.io/2020/08/29/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F/"/>
     <id>forestxx.github.io/2020/08/29/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F/</id>
     <published>2020-08-29T11:48:33.000Z</published>
-    <updated>2020-08-30T04:26:35.386Z</updated>
+    <updated>2020-09-08T02:25:52.780Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="nodejs-环境搭建"><a href="#nodejs-环境搭建" class="headerlink" title="nodejs 环境搭建"></a>nodejs 环境搭建</h2><p><a href="https://nodejs.org/en/download/">官网下载安装包</a></p><ul><li>安装之后,进行nodejs的环境搭建<br><a href="https://blog.csdn.net/qq_43285335/article/details/90696126?biz_id=102&utm_term=nodejs%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-90696126&spm=1018.2118.3001.4187">nodejs搭建教程</a></li></ul><h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><ul><li><a href="https://blog.csdn.net/lvkelly/article/details/54666868?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159876153119195265933747%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=159876153119195265933747&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-54666868.pc_ecpm_v3_pc_rank_v3&utm_term=git%E5%AE%89%E8%A3%85&spm=1018.2118.3001.4187">Git</a>是一个开源的分布式版本控制系统，用于敏捷高效地处理项目。我们这里需要利用git将我们搭建好的网站推送到 github 上。</li></ul><h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><ul><li><p>1.npm install -g hexo    全局安装hexo    在git bash下执行</p></li><li><p>2.npm install -g hexo-cli<br>统一验证下</p></li></ul><p>1.验证是否安装好了</p><p><code>node -v</code><br>安装好默认有npm</p><p>2.验证npm </p><p><code>npm -v</code></p><p>3.验证Hexo</p><p><code>hexo -v</code></p><blockquote><p>出现版号表示安装成功</p></blockquote><ul><li><p>3.创建文件夹     E:\blog  (此时是一个空文件夹)</p></li><li><p>4.在文件夹(指的是blog文件夹下)下Git Bash，输入命令 hexo init  后会如下图所示<br><img src= "/img/loading.gif" data-lazy-src="https://img-blog.csdn.net/20180517194019204?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NDM4NDE4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="111"></p></li><li><p><a href="https://hexo.io/zh-cn/docs/index.html">参考官方中文文档</a></p></li></ul><h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><p>得在确定上面安装都没问题的情况下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new hello Hexo    &#x2F;&#x2F;新建一篇名为&quot;hello Hexo&quot;的博客</span><br><span class="line">hexo g                 &#x2F;&#x2F;生成静态文件</span><br><span class="line">hexo s                 &#x2F;&#x2F;本地部署预览</span><br></pre></td></tr></table></figure><p>此时，我们的网站已经初步成型，可以输入 localhost:4000  访问。</p><h2 id="Hexo常用命令"><a href="#Hexo常用命令" class="headerlink" title="Hexo常用命令"></a>Hexo常用命令</h2><p>初始化博客</p><blockquote><p>hexo init 文件夹名称<br>新建文章<br>hexo new 文章名称<br>(或者)<br>hexo n 文章名称<br>在线预览<br>hexo server<br>(或者)<br>hexo s<br>一键部署<br>hexo deploy<br>(或者)<br>hexo d</p></blockquote><h2 id="github-或-gitee注册并创建仓库"><a href="#github-或-gitee注册并创建仓库" class="headerlink" title="github 或 gitee注册并创建仓库"></a>github 或 gitee注册并创建仓库</h2><p><a href="https://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html">参考文档GitHub的ssh密匙添加</a><br><a href="https://www.jianshu.com/p/3f4b2ede5a93">参考文档Gitee的ssh密匙添加</a><br><strong>将hexo与gitHub关联</strong><br>打开blog根目录下的站点配置配置文件_config.yml，修改成下面的样子并保存</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;forestxx&#x2F;forestxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>这一步其实就是给 hexo d 这个部署命令做相应的配置，让hexo知道你要把blog部署到哪，很显然我们是部署到github仓库里。</p><p>然后我们要安装git部署插件，输入以下命令：<br><code>npm install hexo-deployer-git --save</code><br>然后输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &#x2F;&#x2F;清理静态文件</span><br><span class="line">hexo g &#x2F;&#x2F;生成静态文件</span><br><span class="line">hexo d &#x2F;&#x2F;部署</span><br></pre></td></tr></table></figure><p>这三条是我们日后写博客经常要用到的命令，其中第三条的 hexo d 就是部署网站命令，d是deploy的缩写，对应到我们刚刚在站点配置文件中的修改。</p><p>完成后打开浏览器，在地址栏输入你的放置个人网站的仓库路径，即xxxx.github.io，其中xxxx表示我们的用户名。当然这里有个前提，你是按照用户名.github.io的形式来命名你的仓库。</p><p>你就会发现你的博客已经上线了，可以在网络上被访问了。</p><h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h1><p><a href="https://hexo.io/themes/">登录官方寻找适合的主题</a><br>并按相应要求进行配置</p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><a href="https://blog.csdn.net/weixin_42334475/article/details/101055364?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159875359019724839217025%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=159875359019724839217025&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-101055364.pc_ecpm_v3_pc_rank_v3&utm_term=hexo+%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&spm=1018.2118.3001.4187">绑定域名</a></p><p><a href="https://www.bilibili.com/video/BV1je41147Ma?from=search&seid=16084350877597117612">参考视频</a></p>]]></content>
     
@@ -32,6 +58,8 @@
       
     
     
+    
+    <category term="网站搭建" scheme="forestxx.github.io/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
     
     
     <category term="hexo" scheme="forestxx.github.io/tags/hexo/"/>
