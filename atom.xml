@@ -6,7 +6,7 @@
   <link href="forestxx.github.io/atom.xml" rel="self"/>
   
   <link href="forestxx.github.io/"/>
-  <updated>2020-09-08T02:25:57.552Z</updated>
+  <updated>2020-09-13T05:02:41.254Z</updated>
   <id>forestxx.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&amp;p和*p</title>
+    <link href="forestxx.github.io/2020/09/13/p%E5%92%8C-p/"/>
+    <id>forestxx.github.io/2020/09/13/p%E5%92%8C-p/</id>
+    <published>2020-09-13T04:54:11.000Z</published>
+    <updated>2020-09-13T05:02:41.254Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src= "/img/loading.gif" data-lazy-src="https://iknow-pic.cdn.bcebos.com/bf096b63f6246b609b2928a8e9f81a4c500fa2c3"></p><ul><li><p>1.在C++中，函数baivoid func(int &amp;p,int q)中的第一个形式参数p是“int型引用du”类型。引用是C++的特殊变量类型，它是已zhi有变量的别名。主调函数调dao用func把实参传给p时，实际上是给实参起了个别名p，所以在函数中对p的操作就是对主调函数中的对应实参的操作，将会使实参发生永久性改变。而func中的第二个形参int q是普通的int类型，调用时只是将实参的“值”拷贝给q，所以在函数中对q的操作并不影响主调函数中的实参值</p></li><li><p>2.int &amp;p这样写，只在作为函数的形式参数时是正确的，若是在声明语句则必须初始化，只有写成int a,&amp;p=a;才是正确的，因为如前所述引用“是已有变量的别名”，所以不可能独立存在。</p></li><li><p>3.题面代码在调用func时把x传给了第一个int引用形参p(称为引用传递)，把y传给了第二个普通int形参q(称为值传递或拷贝传递)，函数中语句p=q;把y的值赋给了p，由于p是x的别名，所以使主调函数中x的值变成了y的值2；而q=t;语句虽使函数中的q变量的值变为x原先的值1，但由于q只是y的拷贝，所以并不能影响到主调函数中y变量的值。所以正确选项是D。</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="小知识" scheme="forestxx.github.io/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="其他" scheme="forestxx.github.io/tags/%E5%85%B6%E4%BB%96/"/>
+    
+    <category term="c语言" scheme="forestxx.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性表</title>
+    <link href="forestxx.github.io/2020/09/12/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+    <id>forestxx.github.io/2020/09/12/%E7%BA%BF%E6%80%A7%E8%A1%A8/</id>
+    <published>2020-09-12T08:54:56.000Z</published>
+    <updated>2020-09-12T08:54:56.632Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>离散数学的学习1</title>
@@ -73,9 +119,9 @@
     <link href="forestxx.github.io/2020/08/28/ceshi/"/>
     <id>forestxx.github.io/2020/08/28/ceshi/</id>
     <published>2020-08-28T03:18:05.000Z</published>
-    <updated>2020-08-29T06:29:26.083Z</updated>
+    <updated>2020-09-13T04:51:47.804Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="测试用"><a href="#测试用" class="headerlink" title="测试用"></a>测试用</h1><h2 id="第一篇文章呢～"><a href="#第一篇文章呢～" class="headerlink" title="第一篇文章呢～"></a>第一篇文章呢～</h2><h3 id="这是三级标题哦"><a href="#这是三级标题哦" class="headerlink" title="这是三级标题哦"></a>这是三级标题哦</h3><ul><li>列表1</li><li>列表2<br>  我是a哦<br>  我是b啊</li><li>列表3<h3 id="网站与图片的载入"><a href="#网站与图片的载入" class="headerlink" title="网站与图片的载入"></a>网站与图片的载入</h3></li></ul><p><a href="http://www.bilibili.com/">这个网站真不戳</a></p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/28/HUOqNZ1sGj7W5CR.png" alt="猜猜是啥动漫？"><br>最近刚看的一部动漫，真的燃</p><h3 id="字体的变换"><a href="#字体的变换" class="headerlink" title="字体的变换"></a>字体的变换</h3><p><em>字体变斜了</em></p><p><strong>还能变粗呢</strong></p><p><strong><em>还能变得又粗又斜呢～</em></strong></p><hr><p>这里是分割线</p><hr><h3 id="代码插入测试"><a href="#代码插入测试" class="headerlink" title="代码插入测试"></a>代码插入测试</h3><p><code>&lt;html&gt;&lt;/html&gt;</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;title&gt;我是标题(假的～)&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><blockquote><p>…..代码高亮还没弄好，我弄弄….</p></blockquote><p>先就这么多了吧</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="测试用"><a href="#测试用" class="headerlink" title="测试用"></a>测试用</h1><h2 id="第一篇文章呢～"><a href="#第一篇文章呢～" class="headerlink" title="第一篇文章呢～"></a>第一篇文章呢～</h2><h3 id="这是三级标题哦"><a href="#这是三级标题哦" class="headerlink" title="这是三级标题哦"></a>这是三级标题哦</h3><ul><li><p>列表1<br>我是a哦(列表1后直接回车)</p></li><li><p>列表2<br>我是b啊(列表2后面两个空格一个回车，统一格式)</p></li><li><p>列表3<br>vscode真好用！</p></li></ul><h3 id="网站与图片的载入"><a href="#网站与图片的载入" class="headerlink" title="网站与图片的载入"></a>网站与图片的载入</h3><p><a href="http://www.bilibili.com/">这个网站真不戳</a></p><ul><li><p>图片的地址获取  </p></li><li><p>方法1: 直接网上找一张图片复制地址。</p></li><li><p>方法2: 如本地的截图等图片通过网站上传图片获取URL再复制地址，一个好用的网站网站 <a href="https://sm.ms/">https://sm.ms</a></p></li><li><p>方法3: 通过将图片上传至新浪微博等(记得开启去水印设置)，然后复制图片地址。</p></li><li><p>测试: <img src= "/img/loading.gif" data-lazy-src="https://wx1.sinaimg.cn/mw1024/005QmjTsgy1giot9rdwl2j30xc0j77d2.jpg"></p></li></ul><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/28/HUOqNZ1sGj7W5CR.png" alt="猜猜是啥动漫？"><br>最近刚看的一部动漫，真的燃</p><h3 id="字体的变换"><a href="#字体的变换" class="headerlink" title="字体的变换"></a>字体的变换</h3><p><em>字体变斜了</em></p><p><strong>还能变粗呢</strong></p><p><strong><em>还能变得又粗又斜呢～</em></strong></p><hr><p>这里是分割线</p><hr><h3 id="代码插入测试"><a href="#代码插入测试" class="headerlink" title="代码插入测试"></a>代码插入测试</h3><p><code>&lt;html&gt;&lt;/html&gt;</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;title&gt;我是标题(假的～)&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><blockquote><p>…..代码高亮还没弄好，我弄弄….</p></blockquote><ul><li>开启侧边预览<br>用vscode编辑时输入command+shift+p，win电脑下command换成Ctrl就可以了，然后输入mark，点侧边栏预览</li></ul><p>先就这么多了吧</p>]]></content>
     
     
       
