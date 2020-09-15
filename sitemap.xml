@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>forestxx.github.io/2020/08/28/ceshi/</loc>
+    
+    <lastmod>2020-09-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>forestxx.github.io/2020/09/15/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88/</loc>
     
     <lastmod>2020-09-15</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>forestxx.github.io/2020/09/13/p%E5%92%8C-p/</loc>
-    
-    <lastmod>2020-09-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>forestxx.github.io/2020/08/28/ceshi/</loc>
     
     <lastmod>2020-09-13</lastmod>
     
@@ -130,20 +130,6 @@
   </url>
   
   <url>
-    <loc>forestxx.github.io/tags/hexo/</loc>
-    <lastmod>2020-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>forestxx.github.io/tags/blog/</loc>
-    <lastmod>2020-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>forestxx.github.io/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
@@ -152,6 +138,20 @@
   
   <url>
     <loc>forestxx.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2020-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>forestxx.github.io/tags/hexo/</loc>
+    <lastmod>2020-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>forestxx.github.io/tags/blog/</loc>
     <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -181,14 +181,14 @@
   </url>
   
   <url>
-    <loc>forestxx.github.io/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</loc>
+    <loc>forestxx.github.io/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>forestxx.github.io/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
+    <loc>forestxx.github.io/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
