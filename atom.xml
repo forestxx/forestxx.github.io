@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Forest</title>
+  
+  <subtitle>Forest</subtitle>
+  <link href="forestxx.github.io/atom.xml" rel="self"/>
+  
+  <link href="forestxx.github.io/"/>
+  <updated>2021-09-26T02:03:00.227Z</updated>
+  <id>forestxx.github.io/</id>
+  
+  <author>
+    <name>Qing Shan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>冒泡排序</title>
+    <link href="forestxx.github.io/2021/09/26/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
+    <id>forestxx.github.io/2021/09/26/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</id>
+    <published>2021-09-26T01:06:42.000Z</published>
+    <updated>2021-09-26T02:03:00.227Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="冒泡排序（Bubble-Sort）"><a href="#冒泡排序（Bubble-Sort）" class="headerlink" title="冒泡排序（Bubble Sort）"></a>冒泡排序（Bubble Sort）</h1><p>冒泡排序是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果它们的顺序错误就把它们交换过来。走访数列的工是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。 </p><h2 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h2><ul><li>比较相邻的元素。如果第一个比第二个大，就交换它们两个；</li><li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对，这样在最后的元素应该会是最大的数；</li><li>针对所有的元素重复以上的步骤，除了最后一个；</li><li>重复步骤1~3，直到排序完成。</li></ul><h2 id="动图演示"><a href="#动图演示" class="headerlink" title="动图演示"></a>动图演示</h2><p><img src= "/img/loading.gif" data-lazy-src="https://images2017.cnblogs.com/blog/849589/201710/849589-20171015223238449-2146169197.gif"></p><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">bubbleSort</span><span class="params">(arr)</span> </span>&#123;</span><br><span class="line">    var len = arr.length;</span><br><span class="line">    <span class="keyword">for</span> (var i = <span class="number">0</span>; i &lt; len - <span class="number">1</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (var j = <span class="number">0</span>; j &lt; len - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j+<span class="number">1</span>]) &#123;        <span class="comment">// 相邻元素两两对比</span></span><br><span class="line">                var temp = arr[j+<span class="number">1</span>];        <span class="comment">// 元素交换</span></span><br><span class="line">                arr[j+<span class="number">1</span>] = arr[j];</span><br><span class="line">                arr[j] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span> arr[]) &#123;</span><br><span class="line"><span class="keyword">int</span> len = arr.length;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len-<span class="number">1</span>;i++) &#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;len-i-<span class="number">1</span>;j++) &#123;</span><br><span class="line"><span class="keyword">if</span>(arr[j]&gt;arr[j+<span class="number">1</span>]) &#123;</span><br><span class="line">arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">arr[j+<span class="number">1</span>]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubbleSort</span>(<span class="params">arr</span>):</span></span><br><span class="line">    n = len(arr)</span><br><span class="line"> </span><br><span class="line">    <span class="comment"># 遍历所有数组元素</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line"> </span><br><span class="line">        <span class="comment"># Last i elements are already in place</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, n-i<span class="number">-1</span>):</span><br><span class="line"> </span><br><span class="line">            <span class="keyword">if</span> arr[j] &gt; arr[j+<span class="number">1</span>] :</span><br><span class="line">                arr[j], arr[j+<span class="number">1</span>] = arr[j+<span class="number">1</span>], arr[j]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+    <category term="算法" scheme="forestxx.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="排序" scheme="forestxx.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据可视化基础01</title>
+    <link href="forestxx.github.io/2021/09/14/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9F%BA%E7%A1%8001/"/>
+    <id>forestxx.github.io/2021/09/14/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9F%BA%E7%A1%8001/</id>
+    <published>2021-09-14T14:10:58.000Z</published>
+    <updated>2021-09-14T14:10:58.777Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于指针</title>
+    <link href="forestxx.github.io/2020/09/15/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88/"/>
+    <id>forestxx.github.io/2020/09/15/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88/</id>
+    <published>2020-09-15T02:15:48.000Z</published>
+    <updated>2020-09-15T06:21:51.399Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="取地址运算符-amp"><a href="#取地址运算符-amp" class="headerlink" title="取地址运算符 &amp;"></a>取地址运算符 &amp;</h3><ul><li>&amp; 是一个运算符，获得变量的地址，他的操作数必须是变量。</li><li>&amp; 是一元运算符，返回操作数的内存地址。例如，如果 var 是一个整型变量，则 &amp;var 是它的地址。该运算符与其他一元运算符具有相同的优先级，在运算时它是从右向左顺序进行的。可以把 &amp; 运算符读作”取地址运算符”，这意味着，&amp;var 读作”var 的地址”。</li></ul><h3 id="间接寻址运算符"><a href="#间接寻址运算符" class="headerlink" title="间接寻址运算符 *"></a>间接寻址运算符 *</h3><ul><li>第二个运算符是间接寻址运算符 <em>，它是 &amp; 运算符的补充。</em> 是一元运算符，返回操作数所指定地址的变量的值。</li></ul><h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ul><li><p>调用时变量前加 “&amp;” ——-返回该变量的地址</p></li><li><p>声明时变量前加 “基本类型 *” ——-该指针变量表示另一个普通变量的地址   eg:int * 或 char *</p></li><li><p>调用时变量前加 “*”——-表示取该地址的内容</p></li><li><p>声明时变量前加 “基本类型 **”——-该二级指针变量表示另一个一级”基本类型 *”指针变量地址   </p></li></ul><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">int</span>  var;</span><br><span class="line">   <span class="keyword">int</span>  *ptr;</span><br><span class="line">   <span class="keyword">int</span>  val;</span><br><span class="line"></span><br><span class="line">   var = <span class="number">3000</span>;</span><br><span class="line"></span><br><span class="line">   <span class="comment">// 获取 var 的地址,把var的地址交给ptr</span></span><br><span class="line">   <span class="comment">//此时*ptr等价于var</span></span><br><span class="line">   <span class="comment">//ptr=&amp;val；是使p这个指针变量指向a,因为我们要把键盘输入端的字符存到变量a所在的存储空间，而不是变量a存储的数据所指向的内存空间~所以写做scanf(&quot;%d&quot;,&amp;a);</span></span><br><span class="line">   <span class="comment">// ”&amp;“是以一个操作符，可以获取变量a所在的存储空间位置，而不是变量a所在存储空间中存储的数据.也就是所谓的地址=指针</span></span><br><span class="line">  ptr = &amp;var;</span><br><span class="line"><span class="comment">//程序中var=3000与*ptr=5是等同的。</span></span><br><span class="line">    *ptr=<span class="number">5</span>;</span><br><span class="line">   <span class="comment">// 获取 ptr 的值</span></span><br><span class="line">   val = *ptr;</span><br><span class="line">   </span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,var);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,*ptr);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,val);</span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>,&amp;var);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>,&amp;*ptr);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>,&amp;val);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>输出结果</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ cpp main.c -o main.ii</span><br><span class="line">$ cc main.ii -o main</span><br><span class="line">$ ./main</span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">0x100000</span></span><br><span class="line"><span class="number">0x100000</span></span><br><span class="line"><span class="number">0x100010</span></span><br><span class="line">Program exited with status <span class="number">0</span></span><br></pre></td></tr></table></figure><ul><li>ptr=&amp;val 就是指针变量ptr的值变为变量val的地址，也就是0x100000；此时的ptr 是指针变量</li><li>ptr=*val 就是把变量val的值3赋给变量p，也就是ptr=3; 此时的ptr是变量而不是指针变量</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="C语言" scheme="forestxx.github.io/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="测试" scheme="forestxx.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="C语言" scheme="forestxx.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="指针" scheme="forestxx.github.io/tags/%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&amp;p和*p</title>
+    <link href="forestxx.github.io/2020/09/13/p%E5%92%8C-p/"/>
+    <id>forestxx.github.io/2020/09/13/p%E5%92%8C-p/</id>
+    <published>2020-09-13T04:54:11.000Z</published>
+    <updated>2020-09-13T05:02:41.254Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src= "/img/loading.gif" data-lazy-src="https://iknow-pic.cdn.bcebos.com/bf096b63f6246b609b2928a8e9f81a4c500fa2c3"></p><ul><li><p>1.在C++中，函数baivoid func(int &amp;p,int q)中的第一个形式参数p是“int型引用du”类型。引用是C++的特殊变量类型，它是已zhi有变量的别名。主调函数调dao用func把实参传给p时，实际上是给实参起了个别名p，所以在函数中对p的操作就是对主调函数中的对应实参的操作，将会使实参发生永久性改变。而func中的第二个形参int q是普通的int类型，调用时只是将实参的“值”拷贝给q，所以在函数中对q的操作并不影响主调函数中的实参值</p></li><li><p>2.int &amp;p这样写，只在作为函数的形式参数时是正确的，若是在声明语句则必须初始化，只有写成int a,&amp;p=a;才是正确的，因为如前所述引用“是已有变量的别名”，所以不可能独立存在。</p></li><li><p>3.题面代码在调用func时把x传给了第一个int引用形参p(称为引用传递)，把y传给了第二个普通int形参q(称为值传递或拷贝传递)，函数中语句p=q;把y的值赋给了p，由于p是x的别名，所以使主调函数中x的值变成了y的值2；而q=t;语句虽使函数中的q变量的值变为x原先的值1，但由于q只是y的拷贝，所以并不能影响到主调函数中y变量的值。所以正确选项是D。</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="小知识" scheme="forestxx.github.io/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="其他" scheme="forestxx.github.io/tags/%E5%85%B6%E4%BB%96/"/>
+    
+    <category term="c语言" scheme="forestxx.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性表</title>
+    <link href="forestxx.github.io/2020/09/12/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+    <id>forestxx.github.io/2020/09/12/%E7%BA%BF%E6%80%A7%E8%A1%A8/</id>
+    <published>2020-09-12T08:54:56.000Z</published>
+    <updated>2020-09-12T08:54:56.632Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学的学习1</title>
+    <link href="forestxx.github.io/2020/09/08/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%AD%A6%E4%B9%A01/"/>
+    <id>forestxx.github.io/2020/09/08/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%9A%84%E5%AD%A6%E4%B9%A01/</id>
+    <published>2020-09-08T02:05:45.000Z</published>
+    <updated>2020-09-08T02:25:57.552Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="离散数学"><a href="#离散数学" class="headerlink" title="离散数学"></a>离散数学</h1><h2 id="集合的定义"><a href="#集合的定义" class="headerlink" title="集合的定义"></a>集合的定义</h2><p> <strong>集合</strong> 是由指定范围内的满足给定条件定所有对象聚集在一起构成，每一个对象称伟这个集合的 <strong>元素</strong></p><p>集合符号的表示<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/07/bwvhn3roGVA4lsm.png" alt="集合"></p><p>属于关系<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/07/TkeAI1GEafsgn4Z.png" alt="1"></p><p> 枚举法<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/08/kWmJ8VqFwjLdBzK.png" alt="2"></p><p> 叙述法<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/08/7IBc8SnLHYOrhqA.png" alt="3"></p><p> 基数<br> <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/09/08/Kt6NARpSaOGCoMZ.png" alt="4"></p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="离散数学" scheme="forestxx.github.io/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="离散数学" scheme="forestxx.github.io/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="数据结构" scheme="forestxx.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客网站的快速搭建</title>
+    <link href="forestxx.github.io/2020/08/29/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F/"/>
+    <id>forestxx.github.io/2020/08/29/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F/</id>
+    <published>2020-08-29T11:48:33.000Z</published>
+    <updated>2020-09-08T02:25:52.780Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="nodejs-环境搭建"><a href="#nodejs-环境搭建" class="headerlink" title="nodejs 环境搭建"></a>nodejs 环境搭建</h2><p><a href="https://nodejs.org/en/download/">官网下载安装包</a></p><ul><li>安装之后,进行nodejs的环境搭建<br><a href="https://blog.csdn.net/qq_43285335/article/details/90696126?biz_id=102&utm_term=nodejs%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-90696126&spm=1018.2118.3001.4187">nodejs搭建教程</a></li></ul><h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><ul><li><a href="https://blog.csdn.net/lvkelly/article/details/54666868?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159876153119195265933747%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=159876153119195265933747&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-54666868.pc_ecpm_v3_pc_rank_v3&utm_term=git%E5%AE%89%E8%A3%85&spm=1018.2118.3001.4187">Git</a>是一个开源的分布式版本控制系统，用于敏捷高效地处理项目。我们这里需要利用git将我们搭建好的网站推送到 github 上。</li></ul><h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><ul><li><p>1.npm install -g hexo    全局安装hexo    在git bash下执行</p></li><li><p>2.npm install -g hexo-cli<br>统一验证下</p></li></ul><p>1.验证是否安装好了</p><p><code>node -v</code><br>安装好默认有npm</p><p>2.验证npm </p><p><code>npm -v</code></p><p>3.验证Hexo</p><p><code>hexo -v</code></p><blockquote><p>出现版号表示安装成功</p></blockquote><ul><li><p>3.创建文件夹     E:\blog  (此时是一个空文件夹)</p></li><li><p>4.在文件夹(指的是blog文件夹下)下Git Bash，输入命令 hexo init  后会如下图所示<br><img src= "/img/loading.gif" data-lazy-src="https://img-blog.csdn.net/20180517194019204?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NDM4NDE4/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="111"></p></li><li><p><a href="https://hexo.io/zh-cn/docs/index.html">参考官方中文文档</a></p></li></ul><h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><p>得在确定上面安装都没问题的情况下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new hello Hexo    &#x2F;&#x2F;新建一篇名为&quot;hello Hexo&quot;的博客</span><br><span class="line">hexo g                 &#x2F;&#x2F;生成静态文件</span><br><span class="line">hexo s                 &#x2F;&#x2F;本地部署预览</span><br></pre></td></tr></table></figure><p>此时，我们的网站已经初步成型，可以输入 localhost:4000  访问。</p><h2 id="Hexo常用命令"><a href="#Hexo常用命令" class="headerlink" title="Hexo常用命令"></a>Hexo常用命令</h2><p>初始化博客</p><blockquote><p>hexo init 文件夹名称<br>新建文章<br>hexo new 文章名称<br>(或者)<br>hexo n 文章名称<br>在线预览<br>hexo server<br>(或者)<br>hexo s<br>一键部署<br>hexo deploy<br>(或者)<br>hexo d</p></blockquote><h2 id="github-或-gitee注册并创建仓库"><a href="#github-或-gitee注册并创建仓库" class="headerlink" title="github 或 gitee注册并创建仓库"></a>github 或 gitee注册并创建仓库</h2><p><a href="https://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html">参考文档GitHub的ssh密匙添加</a><br><a href="https://www.jianshu.com/p/3f4b2ede5a93">参考文档Gitee的ssh密匙添加</a><br><strong>将hexo与gitHub关联</strong><br>打开blog根目录下的站点配置配置文件_config.yml，修改成下面的样子并保存</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;forestxx&#x2F;forestxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>这一步其实就是给 hexo d 这个部署命令做相应的配置，让hexo知道你要把blog部署到哪，很显然我们是部署到github仓库里。</p><p>然后我们要安装git部署插件，输入以下命令：<br><code>npm install hexo-deployer-git --save</code><br>然后输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &#x2F;&#x2F;清理静态文件</span><br><span class="line">hexo g &#x2F;&#x2F;生成静态文件</span><br><span class="line">hexo d &#x2F;&#x2F;部署</span><br></pre></td></tr></table></figure><p>这三条是我们日后写博客经常要用到的命令，其中第三条的 hexo d 就是部署网站命令，d是deploy的缩写，对应到我们刚刚在站点配置文件中的修改。</p><p>完成后打开浏览器，在地址栏输入你的放置个人网站的仓库路径，即xxxx.github.io，其中xxxx表示我们的用户名。当然这里有个前提，你是按照用户名.github.io的形式来命名你的仓库。</p><p>你就会发现你的博客已经上线了，可以在网络上被访问了。</p><h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h1><p><a href="https://hexo.io/themes/">登录官方寻找适合的主题</a><br>并按相应要求进行配置</p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><a href="https://blog.csdn.net/weixin_42334475/article/details/101055364?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159875359019724839217025%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=159875359019724839217025&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-101055364.pc_ecpm_v3_pc_rank_v3&utm_term=hexo+%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&spm=1018.2118.3001.4187">绑定域名</a></p><p><a href="https://www.bilibili.com/video/BV1je41147Ma?from=search&seid=16084350877597117612">参考视频</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="网站搭建" scheme="forestxx.github.io/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="hexo" scheme="forestxx.github.io/tags/hexo/"/>
+    
+    <category term="blog" scheme="forestxx.github.io/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ceshi</title>
+    <link href="forestxx.github.io/2020/08/28/ceshi/"/>
+    <id>forestxx.github.io/2020/08/28/ceshi/</id>
+    <published>2020-08-28T03:18:05.000Z</published>
+    <updated>2020-09-15T06:21:56.086Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="测试用"><a href="#测试用" class="headerlink" title="测试用"></a>测试用</h1><h2 id="第一篇文章呢～"><a href="#第一篇文章呢～" class="headerlink" title="第一篇文章呢～"></a>第一篇文章呢～</h2><h3 id="这是三级标题哦"><a href="#这是三级标题哦" class="headerlink" title="这是三级标题哦"></a>这是三级标题哦</h3><ul><li><p>列表1<br>我是a哦(列表1后直接回车)</p></li><li><p>列表2<br>我是b啊(列表2后面两个空格一个回车，统一格式)</p></li><li><p>列表3<br>vscode真好用！</p></li></ul><h3 id="网站与图片的载入"><a href="#网站与图片的载入" class="headerlink" title="网站与图片的载入"></a>网站与图片的载入</h3><p><a href="http://www.bilibili.com/">这个网站真不戳</a></p><ul><li><p>图片的地址获取  </p></li><li><p>方法1: 直接网上找一张图片复制地址。</p></li><li><p>方法2: 如本地的截图等图片通过网站上传图片获取URL再复制地址，一个好用的网站网站 <a href="https://sm.ms/">https://sm.ms</a></p></li><li><p>方法3: 通过将图片上传至新浪微博等(记得开启去水印设置)，然后复制图片地址。</p></li><li><p>测试: <img src= "/img/loading.gif" data-lazy-src="https://wx1.sinaimg.cn/mw1024/005QmjTsgy1giot9rdwl2j30xc0j77d2.jpg"></p></li></ul><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/28/HUOqNZ1sGj7W5CR.png" alt="猜猜是啥动漫？"><br>最近刚看的一部动漫，真的燃</p><h3 id="字体的变换"><a href="#字体的变换" class="headerlink" title="字体的变换"></a>字体的变换</h3><p><em>字体变斜了</em></p><p><strong>还能变粗呢</strong></p><p><strong><em>还能变得又粗又斜呢～</em></strong></p><hr><p>这里是分割线</p><hr><h3 id="代码插入测试"><a href="#代码插入测试" class="headerlink" title="代码插入测试"></a>代码插入测试</h3><p><code>&lt;html&gt;&lt;/html&gt;</code></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>我是标题(假的～)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><blockquote><p>  <a href="https://www.jianshu.com/p/335db5716248">Markdown语法的学习</a></p></blockquote><ul><li>开启侧边预览<br>用vscode编辑时输入command+shift+p，win电脑下command换成Ctrl就可以了，然后输入mark，点侧边栏预览</li></ul><p>先就这么多了吧</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="forestxx.github.io/categories/Hexo/"/>
+    
+    
+    <category term="标签" scheme="forestxx.github.io/tags/%E6%A0%87%E7%AD%BE/"/>
+    
+    <category term="测试" scheme="forestxx.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="forestxx.github.io/2020/08/26/hello-world/"/>
+    <id>forestxx.github.io/2020/08/26/hello-world/</id>
+    <published>2020-08-26T02:37:44.887Z</published>
+    <updated>2020-08-26T02:37:44.887Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
